@@ -69,4 +69,4 @@ class Database:
 
     def close(self):
         """Close the database connection."""
-        self.connection.close()
+        self.connection.close() 

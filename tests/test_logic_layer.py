@@ -6,7 +6,7 @@ from pathlib import Path
 # Add the parent directory to the Python path
 sys.path.append(str(Path(__file__).parent.parent))
 
-from logic_layer import TaskManager
+from app.logic_layer import TaskManager
 from dotenv import load_dotenv
 
 # Load environment variables

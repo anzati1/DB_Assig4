@@ -2,7 +2,7 @@ from kivy.app import App
 from kivy.uix.screenmanager import Screen
 from kivy.uix.boxlayout import BoxLayout
 from kivy.lang import Builder
-from logic_layer import TaskManager
+from app.logic_layer import TaskManager
 from kivy.factory import Factory
 import os
 from dotenv import load_dotenv
@@ -10,8 +10,8 @@ from dotenv import load_dotenv
 # Load environment variables from the .env file
 load_dotenv()
 
-Builder.load_file("ui.kv")
-Builder.load_file("popup.kv")
+Builder.load_file("app/ui.kv")
+Builder.load_file("app/popup.kv")
 
 # Configure your MySQL connection
 DB_CONFIG = {
